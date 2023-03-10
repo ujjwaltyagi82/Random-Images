@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  justify-content: space-around;
   background-color: grey;
 }
 .box {
@@ -72,4 +71,59 @@ button:hover {
   margin: 2px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+/* For screens smaller than 600px (e.g. smartphones) */
+@media screen and (max-width: 600px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 30%;
+  }
+
+  .gallery {
+    margin-top: 10px;
+  }
+
+  .list {
+    width: 90%;
+    margin: 2px;
+  }
+}
+
+/* For screens larger than 600px (e.g. tablets and desktops) */
+@media screen and (min-width: 600px) {
+  .box {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  input {
+    width: 60%;
+    margin-bottom: 0;
+  }
+
+  button {
+    width: 5%;
+  }
+
+  .gallery {
+    margin-top: 20px;
+  }
+
+  .list {
+    width: 30%;
+    margin: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
