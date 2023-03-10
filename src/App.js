@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className='box'>
-        <span>Search</span>
+        <span>Type text to Get Images</span>
         <input type="text" value={value} onChange={(e) => setValue(e.target.value)} />
         <button onClick={() => Fetchdata()}>Send</button>
       </div>
